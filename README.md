@@ -4,7 +4,7 @@ live preview > [aurasphere](https://aurasphere.vercel.app)
 
 ## description
 
-The application features an interactive 3D scene, the Aurasphere, rendered using the Threlte core library. 
+The application features an interactive 3D scene, the Aurasphere, rendered using the Threlte library. 
 
 My initial inspiration was thinking about how when people are experiencing an anxiety attack/panic attack or even just feeling a bit stressed and needing a breather, it could help to have an app to help ground them and reconnect them back to the present moment. It's an easy and friendly way to do a little breathing exercise and something to focus on in times of anxiety or stress! 
 
