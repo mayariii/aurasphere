@@ -1,38 +1,28 @@
-# create-svelte
+# aurasphere ✨ threlte hackathon entry
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+live preview > [aurasphere](https://aurasphere.vercel.app)_
 
-## Creating a project
+![image](https://github.com/mayariii/aurasphere/assets/70478809/80d863c0-0412-40f5-99b1-c4ad0dbed20e)
 
-If you're seeing this, you've probably already done this step. Congrats!
+![image](https://github.com/mayariii/aurasphere/assets/70478809/6efa6e83-5076-41f4-958c-e43730eb18c9)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install dependencies with `pnpm install` and start the dev server:
 
 ```bash
-npm run dev
+pnpm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
 ## Building
 
-To create a production version of your app:
+To create a production version of the app:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+You can preview the production build with `pnpm run preview`.
