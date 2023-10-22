@@ -18,12 +18,8 @@
 
 	// background particles
 
-	let particles: THREE.Points;
-	let particleRotationX = 0;
-	let particleRotationY = 0;
-	const geometry = new THREE.BufferGeometry();
-	const vertices: number[] = [];
-	const material = new THREE.PointsMaterial({ size: 2, sizeAttenuation: true });
+	let particles: THREE.Points,particleRotationX = 0, particleRotationY = 0;
+	const geometry = new THREE.BufferGeometry(), vertices: number[] = [], material = new THREE.PointsMaterial({ size: 2, sizeAttenuation: true });
 
 	interactivity();
 

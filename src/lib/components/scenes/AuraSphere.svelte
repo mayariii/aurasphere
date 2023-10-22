@@ -10,36 +10,37 @@
 	import Great from '../models/Great.svelte';
 
 	// planets
-	let scale = spring(1);
-	let planetRotation = 0;
+	let scale = spring(1),
+		planetRotation = 0;
 
 	// background particles
-	let particles: THREE.Points;
-	let particleRotationX = 0;
-	let particleRotationY = 0;
-	const geometry = new THREE.BufferGeometry();
-	const vertices: number[] = [];
-	const material = new THREE.PointsMaterial({ size: 2, sizeAttenuation: true });
+	let particles: THREE.Points,
+		particleRotationX = 0,
+		particleRotationY = 0;
+	
+		const geometry = new THREE.BufferGeometry(),
+		vertices: number[] = [],
+		material = new THREE.PointsMaterial({ size: 2, sizeAttenuation: true });
 
 	// galaxy particles
-	let galaxyParticles: THREE.Points;
-	let galaxyRotationZ = 0;
+	let galaxyParticles: THREE.Points,
+		galaxyRotationZ = 0;
 
-	const numGalaxyParticles = 5000;
-	const spiralFactor = 2;
-	const spiralRandomness = 0.4;
-	const galaxyGeometry = new THREE.BufferGeometry();
-	const positions = new Float32Array(numGalaxyParticles * 3);
-	const colors = new Float32Array(numGalaxyParticles * 3);
-	const galaxyMaterial = new THREE.PointsMaterial({
-		size: 0.1,
-		vertexColors: true,
-		blending: THREE.AdditiveBlending
-	});
+	const numGalaxyParticles = 5000,
+		spiralFactor = 2,
+		spiralRandomness = 0.4,
+		galaxyGeometry = new THREE.BufferGeometry(),
+		positions = new Float32Array(numGalaxyParticles * 3),
+		colors = new Float32Array(numGalaxyParticles * 3),
+		galaxyMaterial = new THREE.PointsMaterial({
+			size: 0.1,
+			vertexColors: true,
+			blending: THREE.AdditiveBlending
+		});
 
 	// audio
-	let isPlaying = false;
-	let audioElement: HTMLAudioElement;
+	let isPlaying = false,
+		audioElement: HTMLAudioElement;
 
 	function playAudio() {
 		if (audioElement) {
@@ -182,7 +183,10 @@
 <!-- breathing planet -->
 <T.Group
 	receiveShadow
-	on:click={() => {isPlaying ? pauseAudio() : playAudio(); isPlaying = !isPlaying;}}
+	on:click={() => {
+		isPlaying ? pauseAudio() : playAudio();
+		isPlaying = !isPlaying;
+	}}
 	on:pointerenter={() => {
 		isButtonHovered = true;
 	}}
@@ -194,7 +198,7 @@
 	}}>
 	<T.Mesh scale={[$scale, $scale, $scale]} position={[0.2, -1, 0.75]} envMapIntensity={11}>
 		<T.SphereGeometry />
-		
+
 		<T.MeshNormalMaterial opacity={0.5} />
 	</T.Mesh>
 
