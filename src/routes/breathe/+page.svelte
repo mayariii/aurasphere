@@ -1,11 +1,16 @@
 <script lang="ts">
-	import AuraSphere from '$lib/components/scenes/AuraSphere.svelte';
+	import Aurasphere from '$lib/components/scenes/Aurasphere.svelte';
 
 	import { Canvas } from '@threlte/core';
 </script>
 
+<svelte:head>
+	<title>aurasphere 🌙 - breathe</title>
+	<meta name="description" content="a little digispace for when you need a moment of zen ✨" />
+</svelte:head>
+
 <Canvas>
-	<AuraSphere />
+	<Aurasphere />
 </Canvas>
 
 <span
