@@ -2,6 +2,8 @@
 
 live preview > [aurasphere](https://aurasphere.vercel.app)
 
+made for the Threlte Hackathon 2023
+
 ## description
 
 The application features an interactive 3D scene, the Aurasphere, rendered using the Threlte library. 
