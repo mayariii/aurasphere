@@ -14,7 +14,8 @@ My initial inspiration was thinking about how when people are experiencing an an
 - users can inhale and exhale in time with the movement of the planet for a calming experience.
 - ambient sound can be toggled on and off by clicking on the planet.
 - users can explore the rest of the scene which provides sensory visuals and animations.
-- hover interactions and animations 
+- hover interactions and animations
+- works on mobile
 
 ## images
 
