@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Aurasphere from '$lib/components/scenes/Aurasphere.svelte';
+	import Aurasphere from '../../lib/components/scenes/AuraSphere.svelte'
 
 	import { Canvas } from '@threlte/core';
 </script>
