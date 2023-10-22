@@ -27,7 +27,7 @@ My initial inspiration was thinking about how when people are experiencing an an
 - Threlte
 
 ## future enhancements
-- using threlte/extras <PositionalAudio/> for the sound
-- embedding actual buttons with <HTML/>
+- using threlte/extras `<PositionalAudio/>` for the sound
+- embedding actual buttons with `<HTML/>`
 - more interactive elements with more objects / scenes to visit
 - choice of environments / soundscapes
